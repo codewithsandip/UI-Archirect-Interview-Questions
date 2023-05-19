@@ -14,9 +14,9 @@
 12. How do you improve the performance of your web application?
 
 
-1. HTML
+* HTML
   1. Semantic HTML
-2. CSS
+* CSS
   1. Flexbox
   2. Grid
   3. RWD
@@ -26,6 +26,5 @@
   7. CSS Animations
   8. CSS Variables
   9. CSS Pseudo Elements
-3. JavaScript
-4. ReactJS
-5. 
+* JavaScript
+* ReactJS 
