@@ -12,3 +12,20 @@
 10. Routing, Lazy loading, rxjs, ngrx store concept, html, css
 11. JavaScript Event loop Diff btwn Angular and JS expression Node JS architecture Async wait vs promise
 12. How do you improve the performance of your web application?
+
+
+1. HTML
+  1. Semantic HTML
+2. CSS
+  1. Flexbox
+  2. Grid
+  3. RWD
+  4. Specificity
+  5. CSS Units
+  6. CSS Positioning
+  7. CSS Animations
+  8. CSS Variables
+  9. CSS Pseudo Elements
+3. JavaScript
+4. ReactJS
+5. 
