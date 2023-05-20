@@ -1,4 +1,4 @@
-# UI-Archirect-Interview-Questions
+# UI-Archirect-Interview-Questions-Answers
 
 
 #### 1. What is the role of a UI solution architect, and what skills and experience do you bring to the position?
