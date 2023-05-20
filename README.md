@@ -886,7 +886,9 @@ When you type a website's URL in your browser and initiate the loading process, 
 10. Completion and Interaction:
    - Once all the resources are downloaded and processed, the website finishes loading on the screen.
    - The browser notifies the user that the page has finished loading, and the user can interact with the fully rendered page.
-   - Ongoing user interactions, such as clicking links, submitting forms,
+   - Ongoing user interactions, such as clicking links, submitting forms
+
+___
 
 #### 2. What are the differences between Long-Polling, Websockets and Server-Sent Events?
 Long-Polling, WebSockets, and Server-Sent Events (SSE) are three different techniques used for real-time communication between a client (usually a web browser) and a server. Here are the differences between them:
@@ -910,6 +912,7 @@ Long-Polling, WebSockets, and Server-Sent Events (SSE) are three different techn
    - Unlike WebSockets, SSE does not provide bidirectional communication, meaning the client cannot send data back to the server using SSE.
 
 In summary, Long-Polling is a technique where the client sends a request and waits for the server to respond, WebSockets provide full-duplex communication allowing real-time bidirectional data transfer, and Server-Sent Events enable the server to push updates or stream data to the client in a unidirectional manner. The choice of which technique to use depends on the specific requirements and use case of the application.
+___
 
 #### 3. Explain the following request and response headers:
 Diff. between Expires, Date, Age and If-Modified-...
@@ -961,6 +964,7 @@ Here's an explanation of the request and response headers you mentioned:
 
 9. X-Frame-Options:
    - The "X-Frame-Options" header is a response header used to protect against clickjacking attacks.
+___
   
 #### 4. What are HTTP methods? List all HTTP methods that you know, and explain them.
 HTTP methods, also known as HTTP verbs, are actions that can be performed on a resource identified by a URL. Here are the most commonly used HTTP methods along with their explanations:
@@ -1006,6 +1010,7 @@ HTTP methods, also known as HTTP verbs, are actions that can be performed on a r
    - It does not modify the resource and is considered safe and idempotent.
 
 These are the commonly used HTTP methods. There are a few other methods like CONNECT (used for establishing a tunnel connection) and OPTIONS (used for retrieving server capabilities), but they are less frequently encountered in typical web application development.
+___
 
 #### 5. What is domain pre-fetching and how does it help with performance?
 Domain pre-fetching, also known as DNS pre-fetching, is a technique used by web browsers to proactively look up and resolve domain names before they are actually requested by the user. It helps improve the performance of a website by reducing the DNS lookup time when a user clicks on a link or requests a resource.
@@ -1023,6 +1028,7 @@ The benefits of domain pre-fetching include:
 3. Better user experience: Faster response times and improved page load speed lead to a better user experience, as users perceive the website as more responsive and efficient.
 
 It's worth noting that domain pre-fetching is an optimization technique that is performed automatically by modern web browsers. However, it requires careful implementation and consideration to avoid unnecessary DNS lookups and potential privacy concerns.
+___
 
 #### 6. What is a CDN and what is the benefit of using one?
 A CDN (Content Delivery Network) is a geographically distributed network of servers that work together to deliver web content to users based on their geographic location. The primary purpose of a CDN is to improve the performance, reliability, and availability of web content. Here are the benefits of using a CDN:
@@ -1040,3 +1046,6 @@ A CDN (Content Delivery Network) is a geographically distributed network of serv
 6. Security and DDoS Protection: Many CDNs offer security features such as DDoS protection, SSL/TLS encryption, and web application firewall (WAF) capabilities. These features help protect websites from malicious attacks, unauthorized access, and other security threats, enhancing the overall security posture of the web application.
 
 In summary, using a CDN provides faster content delivery, reduced server load, increased availability, global reach, content optimization, and enhanced security. These benefits contribute to a better user experience, improved website performance, and increased scalability for handling high traffic volumes.
+___
+
+
