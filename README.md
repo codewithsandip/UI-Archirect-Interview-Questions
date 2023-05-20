@@ -1048,4 +1048,76 @@ A CDN (Content Delivery Network) is a geographically distributed network of serv
 In summary, using a CDN provides faster content delivery, reduced server load, increased availability, global reach, content optimization, and enhanced security. These benefits contribute to a better user experience, improved website performance, and increased scalability for handling high traffic volumes.
 ___
 
+## Performace Questions
+
+#### 1. What tools would you use to find a performance bug in your code?
+To find and diagnose performance bugs in code, several tools and techniques can be utilized. Here are some commonly used tools and approaches:
+
+1. Profilers: Profilers are software tools that analyze the execution of code and measure performance metrics such as CPU usage, memory usage, and execution time. They help identify performance bottlenecks and hotspots in the code. Examples of popular profilers include:
+   - For JavaScript: Chrome DevTools, Firefox Developer Tools, and Node.js Profiler.
+   - For Java: Java VisualVM, YourKit Java Profiler, and JProfiler.
+   - For .NET: Visual Studio Profiler and JetBrains dotTrace.
+
+2. Performance Monitoring Tools: These tools provide real-time monitoring and analysis of a system's performance. They track key performance metrics and generate reports or alerts when performance issues are detected. Examples include:
+   - New Relic
+   - Datadog
+   - AppDynamics
+   - Dynatrace
+
+3. Load Testing Tools: Load testing tools simulate high user traffic and workload scenarios to identify performance issues under stress. They help measure response times, throughput, and resource usage. Popular load testing tools include:
+   - Apache JMeter
+   - Gatling
+   - LoadRunner
+   - Locust
+
+4. Code Review and Static Analysis Tools: Manual code review and the use of static analysis tools can help identify potential performance issues by analyzing code patterns, inefficient algorithms, or resource-heavy operations. Tools like SonarQube, ESLint, and PMD can assist in detecting common performance-related code smells.
+
+5. Browser Developer Tools: Modern web browsers offer built-in developer tools that include performance analysis features. These tools can profile and analyze the performance of web applications, inspect network requests, measure rendering times, and identify potential bottlenecks. Examples include Chrome DevTools and Firefox Developer Tools.
+
+6. Logging and Monitoring: Implementing logging and monitoring within your codebase can help track and identify performance issues by capturing relevant metrics, error logs, and performance data. Log aggregation and monitoring tools like ELK Stack (Elasticsearch, Logstash, Kibana), Splunk, or Grafana can assist in analyzing the collected data.
+
+7. Code Instrumentation: Adding instrumentation code within the application to track and measure performance metrics at specific points can provide insights into the code's behavior and performance characteristics. This can be accomplished through logging, custom profiling, or APM (Application Performance Monitoring) libraries.
+
+Remember that the choice of tools depends on the programming language, environment, and specific requirements of the project. It's important to select the appropriate tools and techniques that align with the technology stack and performance goals of the application.
+___
+
+#### 2. What are some ways you may improve your website's scrolling performance?
+Improving website scrolling performance is crucial for providing a smooth and responsive user experience. Here are some ways to enhance scrolling performance:
+
+1. Optimize JavaScript: Heavy JavaScript operations and event handlers can cause scrolling jank and lag. Minimize the use of expensive operations, optimize code, and ensure efficient event handling. Consider lazy loading or deferring non-critical JavaScript until after scrolling has finished.
+
+2. Efficient CSS Animations and Transitions: CSS animations and transitions can impact scrolling performance, especially if they are complex or trigger frequent repaints. Use hardware-accelerated CSS properties, such as transform and opacity, to ensure smoother animations that don't interfere with scrolling.
+
+3. Debounce or Throttle Scroll Events: Continuous firing of scroll events can overload the browser, leading to a sluggish scrolling experience. Implement debounce or throttle techniques to limit the frequency of scroll event handlers being executed, allowing for smoother scrolling performance.
+
+4. Implement Virtual Scrolling: For large lists or data sets, consider implementing virtual scrolling. Virtual scrolling dynamically loads and renders only the visible portion of the content, reducing the overall DOM size and improving scrolling performance. Libraries like React Virtualized and Angular CDK provide virtual scrolling components.
+
+5. Optimize Image Handling: Large and unoptimized images can significantly impact scrolling performance. Resize, compress, and properly format images to reduce their file size. Consider lazy loading images so that they are loaded only when they come into the viewport.
+
+6. Use CSS Transform: Instead of relying on expensive operations like position: fixed or manipulating the DOM during scrolling, use CSS transforms. Applying CSS transforms, such as translate3d or translateZ, offloads the rendering to the GPU, resulting in smoother scrolling performance.
+
+7. Minimize DOM Manipulation: Excessive DOM manipulation during scrolling can cause performance issues. Reduce unnecessary DOM modifications, avoid complex CSS selectors that trigger layout recalculations, and cache references to frequently accessed DOM elements.
+
+8. Enable Hardware Acceleration: Utilize hardware acceleration by applying CSS properties like transform and opacity to the appropriate elements. This offloads rendering to the GPU, leading to smoother scrolling performance.
+
+9. Test and Optimize on Different Devices: Scrolling performance can vary across devices and browsers. Test your website's scrolling performance on different platforms and devices to identify any specific issues and optimize accordingly.
+
+10. Use Performance Profiling Tools: Utilize browser developer tools or performance profiling tools to identify performance bottlenecks related to scrolling. These tools can help pinpoint specific JavaScript functions, CSS properties, or rendering issues affecting scrolling performance.
+
+Implementing these techniques and optimizing website scrolling performance can significantly enhance the user experience, making the website feel more responsive and fluid during scrolling interactions.
+___
+
+#### 3. Explain the difference between layout, painting and compositing.
+Layout, painting, and compositing are distinct stages in the rendering process of a web browser. Here's an explanation of each stage:
+
+1. Layout (also known as Reflow): Layout involves determining the position, size, and arrangement of elements on a web page. During the layout stage, the browser calculates the dimensions of each element based on CSS styles, content, and other factors. It determines the positioning of elements within the document flow, including their relationships, margins, paddings, and alignments. Changes in layout can be triggered by modifications to the DOM, CSS styles, or viewport size.
+
+2. Painting (also known as Render): Painting involves the process of filling in pixels on the screen with colors and textures based on the rendered elements. It occurs after layout when the browser determines which elements need to be painted and where. The painting process involves traversing the DOM tree, determining the visible elements, and rendering them pixel by pixel. The painted elements are stored in separate layers for compositing.
+
+3. Compositing: Compositing is the stage where the browser takes the rendered elements from painting and combines them into a final image to be displayed on the screen. It involves merging the different layers, handling transparency, applying effects like blending and opacity, and handling transformations such as scaling or rotation. The final composited image is then displayed on the screen.
+
+It's important to note that these stages are not always performed sequentially in a strict order. Modern browsers employ various optimization techniques, such as incremental rendering and layer-based rendering, to improve performance and responsiveness. These techniques can result in overlapping or concurrent execution of layout, painting, and compositing processes.
+
+Understanding the distinction between layout, painting, and compositing is essential for optimizing website performance. By minimizing layout recalculations, reducing unnecessary painting operations, and leveraging hardware acceleration for compositing, developers can enhance rendering efficiency and achieve smoother user experiences.
+___
 
