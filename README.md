@@ -1048,7 +1048,31 @@ A CDN (Content Delivery Network) is a geographically distributed network of serv
 In summary, using a CDN provides faster content delivery, reduced server load, increased availability, global reach, content optimization, and enhanced security. These benefits contribute to a better user experience, improved website performance, and increased scalability for handling high traffic volumes.
 ___
 
-## Performace Questions
+#### 7. What are the best practices to store JWT token in front end?
+When storing a JSON Web Token (JWT) in the front-end, it's important to follow some best practices to ensure the security and integrity of the token. Here are some recommended practices:
+
+1. Use Browser Storage Mechanisms: Store the JWT token in secure browser storage mechanisms such as the browser's localStorage or sessionStorage. These storage options are more secure than using cookies, as they are not automatically sent with every HTTP request.
+
+2. Set Proper Expiration Time: Set an appropriate expiration time for the JWT token to limit its validity. Shorter expiration times reduce the window of opportunity for an attacker to misuse a stolen token.
+
+3. Implement Secure Transmission: Ensure that the JWT token is transmitted securely over HTTPS to prevent interception or tampering during transport.
+
+4. Avoid Storing Sensitive Information: Avoid storing sensitive information in the JWT token, as it is accessible to the client-side code. Keep the token payload minimal and store sensitive data on the server-side instead.
+
+5. Protect Against Cross-Site Scripting (XSS): Apply measures to mitigate Cross-Site Scripting attacks, as they can potentially expose the JWT token or allow unauthorized access to it. Implement input validation and output encoding to prevent malicious script injection.
+
+6. Implement Token Refresh Mechanism: Instead of storing long-lived JWT tokens in the front-end, consider implementing a token refresh mechanism. This involves using shorter-lived access tokens and refreshing them using refresh tokens. The refresh token can be securely stored in an HTTP-only cookie for better security.
+
+7. Apply Same-Site Cookie Attribute: If you choose to use cookies for storing JWT tokens, apply the Same-Site attribute to restrict the cookie to be sent only in same-site requests. This helps protect against cross-site request forgery (CSRF) attacks.
+
+8. Include CSRF Protection: Implement Cross-Site Request Forgery (CSRF) protection mechanisms to prevent attackers from making requests on behalf of authenticated users.
+
+9. Validate and Verify Tokens: Always validate and verify the JWT tokens on the server-side to ensure their authenticity, integrity, and validity. Perform signature verification and check the token's expiration, issuer, and other claims.
+
+Remember, storing JWT tokens in the front-end introduces some inherent risks, so it's essential to follow these best practices to minimize the potential for token misuse and protect user data and application security.
+___
+
+## Performance Questions
 
 #### 1. What tools would you use to find a performance bug in your code?
 To find and diagnose performance bugs in code, several tools and techniques can be utilized. Here are some commonly used tools and approaches:
