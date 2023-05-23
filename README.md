@@ -280,23 +280,23 @@ Screen readers, on the other hand, are software applications that read out the c
 
 To make a website accessible, here are some key considerations and practices:
 
-1. Semantic HTML: Use appropriate HTML elements to structure the content and provide meaningful information. This helps screen readers and other assistive technologies understand the hierarchy and purpose of different page elements. For example, use heading tags (`<h1>`, `<h2>`, etc.) to organize content, `<nav>` for navigation menus, `<main>` for the main content area, and so on.
+1. **Semantic HTML:** Use appropriate HTML elements to structure the content and provide meaningful information. This helps screen readers and other assistive technologies understand the hierarchy and purpose of different page elements. For example, use heading tags (`<h1>`, `<h2>`, etc.) to organize content, `<nav>` for navigation menus, `<main>` for the main content area, and so on.
 
-2. ARIA attributes and roles: Enhance accessibility by adding ARIA attributes and roles to HTML elements. ARIA provides additional context and information that may not be conveyed by the default HTML semantics. For example, you can use `aria-label` to provide a descriptive label for elements, `aria-labelledby` to reference another element as the label, or `aria-describedby` to provide additional descriptions.
+2. **ARIA attributes and roles:** Enhance accessibility by adding ARIA attributes and roles to HTML elements. ARIA provides additional context and information that may not be conveyed by the default HTML semantics. For example, you can use `aria-label` to provide a descriptive label for elements, `aria-labelledby` to reference another element as the label, or `aria-describedby` to provide additional descriptions.
 
-3. Keyboard accessibility: Ensure that all interactive elements, such as links, buttons, form controls, and navigation menus, can be easily accessed and operated using the keyboard alone. Enable keyboard focus styles, and ensure that the tab order follows a logical and intuitive sequence. Test the website's functionality using only the keyboard to verify its accessibility.
+3. **Keyboard accessibility:** Ensure that all interactive elements, such as links, buttons, form controls, and navigation menus, can be easily accessed and operated using the keyboard alone. Enable keyboard focus styles, and ensure that the tab order follows a logical and intuitive sequence. Test the website's functionality using only the keyboard to verify its accessibility.
 
-4. Alt text for images: Include descriptive alternative text (`alt` attribute) for images so that screen readers can convey the meaning and context of the image to users who cannot see it. The alt text should be concise and meaningful, accurately representing the content or function of the image.
+4. **Alt text for images:** Include descriptive alternative text (`alt` attribute) for images so that screen readers can convey the meaning and context of the image to users who cannot see it. The alt text should be concise and meaningful, accurately representing the content or function of the image.
 
-5. Captions and transcripts: Provide captions or transcripts for multimedia content, such as videos or audio files. This enables users who are deaf or hard of hearing to understand the information being presented. Captions should accurately reflect the spoken content and include relevant audio cues.
+5. **Captions and transcripts:** Provide captions or transcripts for multimedia content, such as videos or audio files. This enables users who are deaf or hard of hearing to understand the information being presented. Captions should accurately reflect the spoken content and include relevant audio cues.
 
-6. Color contrast: Ensure sufficient color contrast between text and background elements to improve readability for users with visual impairments. Use tools or plugins that can evaluate and identify color contrast ratios that meet accessibility guidelines (e.g., WCAG 2.1).
+6. **Color contrast:** Ensure sufficient color contrast between text and background elements to improve readability for users with visual impairments. Use tools or plugins that can evaluate and identify color contrast ratios that meet accessibility guidelines (e.g., WCAG 2.1).
 
-7. Form accessibility: Ensure that form inputs, labels, and error messages are properly associated and accessible. Use proper markup, such as `<label>` elements with `for` attributes or using nested `<label>` tags, to associate labels with form controls. Provide clear instructions and feedback for form validation errors.
+7. **Form accessibility:** Ensure that form inputs, labels, and error messages are properly associated and accessible. Use proper markup, such as `<label>` elements with `for` attributes or using nested `<label>` tags, to associate labels with form controls. Provide clear instructions and feedback for form validation errors.
 
-8. Test with assistive technologies: Validate the accessibility of the website using assistive technologies like screen readers or browser plugins. Test the website with different screen readers, browsers, and assistive technology combinations to ensure compatibility and usability.
+8. **Test with assistive technologies:** Validate the accessibility of the website using assistive technologies like screen readers or browser plugins. Test the website with different screen readers, browsers, and assistive technology combinations to ensure compatibility and usability.
 
-9. Stay up-to-date with accessibility guidelines: Keep abreast of evolving accessibility standards and guidelines, such as the Web Content Accessibility Guidelines (WCAG). These guidelines provide comprehensive recommendations for making web content more accessible. Strive to meet the WCAG criteria and adhere to best practices for accessibility.
+9. **Stay up-to-date with accessibility guidelines:** Keep abreast of evolving accessibility standards and guidelines, such as the Web Content Accessibility Guidelines (WCAG). These guidelines provide comprehensive recommendations for making web content more accessible. Strive to meet the WCAG criteria and adhere to best practices for accessibility.
 
 It's important to note that accessibility is an ongoing effort, and addressing accessibility considerations from the early stages of development is crucial. Regular audits, user testing, and feedback from users with disabilities can help identify and address accessibility issues effectively.
 ___
