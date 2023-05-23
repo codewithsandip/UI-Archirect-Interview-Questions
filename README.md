@@ -113,26 +113,26 @@ ___
 
 #### 5. Can you describe your workflow when you create a web page?
 
-1. Requirement Gathering: Understand the project requirements, objectives, and target audience. Gather information about the content, functionality, and design preferences for the web page.
+1. **Requirement Gathering:** Understand the project requirements, objectives, and target audience. Gather information about the content, functionality, and design preferences for the web page.
 
-2. Content Planning: Plan and structure the content that will be included on the web page. Create an outline or wireframe to define the hierarchy and organization of the content.
+2. **Content Planning:** Plan and structure the content that will be included on the web page. Create an outline or wireframe to define the hierarchy and organization of the content.
 
-3. Design Phase:
+3. **Design Phase:**
    a. Visual Design: Create the visual design of the web page using design tools like Sketch, Figma, or Adobe XD. Determine the color scheme, typography, imagery, and overall visual style that aligns with the project requirements and branding guidelines.
    b. UI Elements: Design and create any necessary UI elements such as buttons, icons, navigation menus, forms, or other interactive components.
 
-4. Development Phase:
+4. **Development Phase:**
    a. HTML/CSS: Write the HTML markup and CSS styles to structure and style the web page. Ensure the code is semantically correct, adheres to web standards, and is optimized for performance.
    b. Responsive Design: Implement responsive design techniques using CSS media queries to ensure the web page adapts and displays correctly across different screen sizes and devices.
    c. Interactivity: Add interactivity and behavior to the web page using JavaScript, libraries, or frameworks. Implement animations, form validations, and any client-side functionality as required.
 
-5. Testing and Debugging: Test the web page across different browsers, devices, and operating systems to ensure consistent behavior and appearance. Validate the HTML code for compliance with web standards. Debug any issues or inconsistencies that arise during testing.
+5. **Testing and Debugging:** Test the web page across different browsers, devices, and operating systems to ensure consistent behavior and appearance. Validate the HTML code for compliance with web standards. Debug any issues or inconsistencies that arise during testing.
 
-6. Optimization: Optimize the web page for performance, including optimizing images, minifying code, enabling browser caching, and improving loading times. Perform accessibility checks to ensure compliance with accessibility standards.
+6. **Optimization:** Optimize the web page for performance, including optimizing images, minifying code, enabling browser caching, and improving loading times. Perform accessibility checks to ensure compliance with accessibility standards.
 
-7. Deployment: Upload the web page files to the hosting server or content management system (CMS) and ensure that all necessary assets, scripts, and stylesheets are correctly linked. Conduct final checks to confirm the web page is functional and displays as intended.
+7. **Deployment:** Upload the web page files to the hosting server or content management system (CMS) and ensure that all necessary assets, scripts, and stylesheets are correctly linked. Conduct final checks to confirm the web page is functional and displays as intended.
 
-8. Maintenance: Regularly monitor the web page for any issues, perform updates as needed (such as content updates or bug fixes), and consider user feedback to continuously improve the web page over time.
+8. **Maintenance:** Regularly monitor the web page for any issues, perform updates as needed (such as content updates or bug fixes), and consider user feedback to continuously improve the web page over time.
 
 Remember, this is a general workflow, and the specific steps and tools used may vary depending on the project, team, and individual preferences. The workflow can also be iterative, with frequent communication and collaboration between designers, developers, and stakeholders throughout the process.
 ___
