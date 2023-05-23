@@ -306,27 +306,27 @@ CSS animations and JavaScript animations both have their own set of pros and con
 
 CSS Animations:
 Pros:
-1. Performance: CSS animations are typically hardware-accelerated, meaning they can be rendered more efficiently by the browser, resulting in smoother animations and better performance.
-2. Simplicity: CSS animations can be implemented with minimal code and are relatively easy to use. They often involve declarative syntax, specifying the animation properties directly in the CSS rules.
-3. Browser support: CSS animations are supported by all modern browsers and do not require any additional libraries or frameworks.
-4. Integration with transitions: CSS animations can seamlessly work with CSS transitions, allowing smooth transitions between different states or property changes.
+1. **Performance:** CSS animations are typically hardware-accelerated, meaning they can be rendered more efficiently by the browser, resulting in smoother animations and better performance.
+2. **Simplicity:** CSS animations can be implemented with minimal code and are relatively easy to use. They often involve declarative syntax, specifying the animation properties directly in the CSS rules.
+3. **Browser support:** CSS animations are supported by all modern browsers and do not require any additional libraries or frameworks.
+4. **Integration with transitions:** CSS animations can seamlessly work with CSS transitions, allowing smooth transitions between different states or property changes.
 
 Cons:
-1. Limited control: CSS animations have limited control over the animation flow and timing. They lack advanced features such as delays, dynamic values, and complex sequencing, which are commonly available in JavaScript animation libraries.
-2. Complex animations: Implementing complex or interactive animations solely with CSS can be challenging. It may require writing lengthy CSS keyframe rules and managing multiple animations simultaneously.
-3. Cross-browser inconsistencies: Although CSS animations have good browser support, there may still be some inconsistencies and variations in how different browsers interpret and render certain animation properties.
+1. **Limited control:** CSS animations have limited control over the animation flow and timing. They lack advanced features such as delays, dynamic values, and complex sequencing, which are commonly available in JavaScript animation libraries.
+2. **Complex animations:** Implementing complex or interactive animations solely with CSS can be challenging. It may require writing lengthy CSS keyframe rules and managing multiple animations simultaneously.
+3. **Cross-browser inconsistencies:** Although CSS animations have good browser support, there may still be some inconsistencies and variations in how different browsers interpret and render certain animation properties.
 
 JavaScript Animations:
 Pros:
-1. Flexibility and control: JavaScript animations provide extensive control and flexibility over animation behaviors, timings, and interactions. Developers can use libraries like GSAP, Anime.js, or create custom animation logic to achieve complex and dynamic animations.
-2. Advanced features: JavaScript animations can leverage additional features and libraries to create sophisticated effects like physics-based animations, particle systems, or custom easing functions.
-3. Interaction and events: JavaScript animations can easily integrate with user interactions and respond to events, enabling interactive and engaging animations that react to user actions.
-4. Cross-browser consistency: JavaScript animations can help achieve consistent behavior across different browsers and versions by using libraries that handle browser-specific quirks and provide unified APIs.
+1. **Flexibility and control:** JavaScript animations provide extensive control and flexibility over animation behaviors, timings, and interactions. Developers can use libraries like GSAP, Anime.js, or create custom animation logic to achieve complex and dynamic animations.
+2. **Advanced features:** JavaScript animations can leverage additional features and libraries to create sophisticated effects like physics-based animations, particle systems, or custom easing functions.
+3. **Interaction and events:** JavaScript animations can easily integrate with user interactions and respond to events, enabling interactive and engaging animations that react to user actions.
+4. **Cross-browser consistency:** JavaScript animations can help achieve consistent behavior across different browsers and versions by using libraries that handle browser-specific quirks and provide unified APIs.
 
 Cons:
-1. Performance considerations: JavaScript animations, especially poorly optimized ones, can be computationally expensive and may result in less smooth animations or lower overall performance compared to CSS animations.
-2. Development complexity: JavaScript animations generally require more code and complexity to implement compared to CSS animations. They often involve writing event handlers, manipulating DOM elements, and managing animation states programmatically.
-3. Dependencies: JavaScript animations often rely on external libraries or frameworks, which may introduce additional dependencies, increase the project size, and require additional maintenance and updates.
+1. **Performance considerations:** JavaScript animations, especially poorly optimized ones, can be computationally expensive and may result in less smooth animations or lower overall performance compared to CSS animations.
+2. **Development complexity:** JavaScript animations generally require more code and complexity to implement compared to CSS animations. They often involve writing event handlers, manipulating DOM elements, and managing animation states programmatically.
+3. **Dependencies:** JavaScript animations often rely on external libraries or frameworks, which may introduce additional dependencies, increase the project size, and require additional maintenance and updates.
 
 In practice, both CSS animations and JavaScript animations have their place, and the choice depends on the specific requirements, complexity of the animation, performance considerations, and the desired level of control and interactivity needed. It's common to utilize a combination of CSS and JavaScript animations, leveraging the strengths of each approach to create compelling and performant animations.
 ___
