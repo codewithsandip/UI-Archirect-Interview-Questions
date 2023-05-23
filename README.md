@@ -256,19 +256,19 @@ Flash of Unstyled Content (FOUC) refers to a phenomenon where website content br
 
 To avoid FOUC, here are a few approaches:
 
-1. Place CSS stylesheets in the head section: Placing CSS stylesheets in the head section of the HTML document ensures that they are loaded and applied before the content is rendered. This reduces the chances of unstyled content being displayed to the user.
+1. **Place CSS stylesheets in the head section:** Placing CSS stylesheets in the head section of the HTML document ensures that they are loaded and applied before the content is rendered. This reduces the chances of unstyled content being displayed to the user.
 
-2. Inline critical CSS: Inline critical CSS directly in the HTML document within style tags. Critical CSS refers to the minimal CSS required to render the above-the-fold content. By inlining this CSS, the browser can apply the necessary styles immediately, preventing FOUC for the most important parts of the page. Additional stylesheets can be loaded asynchronously or deferred for non-critical parts.
+2. **Inline critical CSS:** Inline critical CSS directly in the HTML document within style tags. Critical CSS refers to the minimal CSS required to render the above-the-fold content. By inlining this CSS, the browser can apply the necessary styles immediately, preventing FOUC for the most important parts of the page. Additional stylesheets can be loaded asynchronously or deferred for non-critical parts.
 
-3. Use media queries and responsive design: Implement responsive design techniques using CSS media queries. By defining different styles based on the device's screen size or viewport width, you can ensure that appropriate styles are applied from the beginning. This helps avoid situations where the content initially renders unstyled and then adjusts when responsive styles are applied.
+3. **Use media queries and responsive design:** Implement responsive design techniques using CSS media queries. By defining different styles based on the device's screen size or viewport width, you can ensure that appropriate styles are applied from the beginning. This helps avoid situations where the content initially renders unstyled and then adjusts when responsive styles are applied.
 
-4. Utilize preloading techniques: Preload critical CSS files, as well as other key assets such as fonts, images, or JavaScript files, to prioritize their fetching and reduce the chances of FOUC. This can be done using HTML link tags with the rel="preload" attribute, indicating that the resource should be fetched early in the page loading process.
+4. **Utilize preloading techniques:** Preload critical CSS files, as well as other key assets such as fonts, images, or JavaScript files, to prioritize their fetching and reduce the chances of FOUC. This can be done using HTML link tags with the rel="preload" attribute, indicating that the resource should be fetched early in the page loading process.
 
-5. Optimize CSS delivery: Minimize the size of CSS files by removing unused code, reducing redundancy, and utilizing CSS compression techniques. Smaller CSS files load faster, reducing the time between content rendering and CSS application.
+5. **Optimize CSS delivery:** Minimize the size of CSS files by removing unused code, reducing redundancy, and utilizing CSS compression techniques. Smaller CSS files load faster, reducing the time between content rendering and CSS application.
 
-6. Implement server-side rendering (SSR) or static site generation (SSG): SSR or SSG techniques generate fully rendered HTML on the server side before sending it to the client. This ensures that the page is initially displayed with all styles applied, eliminating the possibility of FOUC. Popular frameworks like Next.js (SSR) or Gatsby (SSG) provide capabilities for server-side rendering or static site generation.
+6. **Implement server-side rendering (SSR) or static site generation (SSG):** SSR or SSG techniques generate fully rendered HTML on the server side before sending it to the client. This ensures that the page is initially displayed with all styles applied, eliminating the possibility of FOUC. Popular frameworks like Next.js (SSR) or Gatsby (SSG) provide capabilities for server-side rendering or static site generation.
 
-7. Monitor and test: Regularly monitor and test your website for any instances of FOUC. Use browser developer tools, performance testing tools, or real-user monitoring tools to identify and address any potential FOUC issues. This allows you to make adjustments and optimizations as needed.
+7. **Monitor and test:** Regularly monitor and test your website for any instances of FOUC. Use browser developer tools, performance testing tools, or real-user monitoring tools to identify and address any potential FOUC issues. This allows you to make adjustments and optimizations as needed.
 
 By employing these techniques, you can minimize or eliminate the occurrence of FOUC, providing a smoother and more consistent user experience with styled content from the moment the page loads.
 ___
