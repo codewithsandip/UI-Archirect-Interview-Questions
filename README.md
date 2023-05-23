@@ -139,25 +139,25 @@ ___
 
 #### 6. What actions have you personally taken on recent projects to increase maintainability of your code?
 
-1. Modular and component-based architecture: Breaking down the code into modular components or functions that are self-contained and have clear responsibilities. This promotes reusability, ease of understanding, and makes it easier to update or replace specific parts of the codebase without affecting the entire system.
+1. **Modular and component-based architecture:** Breaking down the code into modular components or functions that are self-contained and have clear responsibilities. This promotes reusability, ease of understanding, and makes it easier to update or replace specific parts of the codebase without affecting the entire system.
 
-2. Clear and consistent coding conventions: Adhering to a set of coding conventions, such as consistent indentation, naming conventions, and code formatting. This improves code readability and makes it easier for other developers to understand and maintain the code.
+2. **Clear and consistent coding conventions:** Adhering to a set of coding conventions, such as consistent indentation, naming conventions, and code formatting. This improves code readability and makes it easier for other developers to understand and maintain the code.
 
-3. Documentation: Writing clear and comprehensive documentation that explains the purpose, functionality, and usage of code modules, functions, and classes. This helps developers understand how different parts of the codebase work and facilitates future maintenance or updates.
+3. **Documentation:** Writing clear and comprehensive documentation that explains the purpose, functionality, and usage of code modules, functions, and classes. This helps developers understand how different parts of the codebase work and facilitates future maintenance or updates.
 
-4. Version control: Utilizing version control systems, such as Git, to track changes made to the codebase. This allows for easy collaboration, rollback to previous versions, and better code management during development, making it easier to maintain and track changes over time.
+4. **Version control:** Utilizing version control systems, such as Git, to track changes made to the codebase. This allows for easy collaboration, rollback to previous versions, and better code management during development, making it easier to maintain and track changes over time.
 
-5. Automated testing: Implementing unit tests, integration tests, and other automated testing frameworks to ensure code correctness and catch potential bugs or regressions early on. This helps maintain code quality and prevents issues from surfacing during maintenance or updates.
+5. **Automated testing:** Implementing unit tests, integration tests, and other automated testing frameworks to ensure code correctness and catch potential bugs or regressions early on. This helps maintain code quality and prevents issues from surfacing during maintenance or updates.
 
-6. Code refactoring: Regularly reviewing and refactoring code to improve its structure, readability, and performance. This includes removing duplicate code, simplifying complex logic, and optimizing performance bottlenecks. Refactoring helps keep the codebase clean, maintainable, and easier to work with.
+6. **Code refactoring:** Regularly reviewing and refactoring code to improve its structure, readability, and performance. This includes removing duplicate code, simplifying complex logic, and optimizing performance bottlenecks. Refactoring helps keep the codebase clean, maintainable, and easier to work with.
 
-7. Dependency management: Utilizing package managers and dependency management tools to handle external libraries and dependencies. This ensures that dependencies are clearly defined, easily upgradable, and avoids unnecessary code duplication.
+7. **Dependency management:** Utilizing package managers and dependency management tools to handle external libraries and dependencies. This ensures that dependencies are clearly defined, easily upgradable, and avoids unnecessary code duplication.
 
-8. Error handling and logging: Implementing proper error handling mechanisms and logging frameworks to catch and log errors or exceptions. This helps in debugging and troubleshooting issues during maintenance and allows developers to identify and fix problems more efficiently.
+8. **Error handling and logging:** Implementing proper error handling mechanisms and logging frameworks to catch and log errors or exceptions. This helps in debugging and troubleshooting issues during maintenance and allows developers to identify and fix problems more efficiently.
 
-9. Code reviews and pair programming: Encouraging code reviews and pair programming sessions where team members can review each other's code for quality, maintainability, and adherence to coding standards. This helps identify potential issues, share knowledge, and ensure that the codebase remains maintainable and consistent across the team.
+9. **Code reviews and pair programming:** Encouraging code reviews and pair programming sessions where team members can review each other's code for quality, maintainability, and adherence to coding standards. This helps identify potential issues, share knowledge, and ensure that the codebase remains maintainable and consistent across the team.
 
-10. Continuous integration and deployment: Setting up automated build processes, continuous integration, and deployment pipelines to streamline the development, testing, and deployment workflow. This ensures that changes can be easily deployed and monitored, making maintenance and updates more manageable.
+10. **Continuous integration and deployment:** Setting up automated build processes, continuous integration, and deployment pipelines to streamline the development, testing, and deployment workflow. This ensures that changes can be easily deployed and monitored, making maintenance and updates more manageable.
 
 These are just a few examples of actions taken to increase code maintainability. The specific actions may vary depending on the project requirements, team dynamics, and development environment.
 ___
