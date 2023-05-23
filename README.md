@@ -194,27 +194,27 @@ ___
 #### 8. How would you optimize a website's assets/resources?
 Optimizing a website's assets and resources is crucial for improving performance and reducing load times. Here are several approaches to optimize website assets:
 
-1. Minimize file sizes: Reduce the size of files such as images, CSS, and JavaScript to minimize download times. Compress and optimize images using tools like ImageOptim or TinyPNG to reduce file sizes without compromising quality. Minify CSS and JavaScript files by removing unnecessary whitespace, comments, and reducing code complexity.
+1. **Minimize file sizes:** Reduce the size of files such as images, CSS, and JavaScript to minimize download times. Compress and optimize images using tools like ImageOptim or TinyPNG to reduce file sizes without compromising quality. Minify CSS and JavaScript files by removing unnecessary whitespace, comments, and reducing code complexity.
 
-2. Enable compression: Enable GZIP compression on the server to compress website assets before sending them to the client's browser. This significantly reduces file sizes and speeds up download times.
+2. **Enable compression:** Enable GZIP compression on the server to compress website assets before sending them to the client's browser. This significantly reduces file sizes and speeds up download times.
 
-3. Leverage browser caching: Set appropriate caching headers to enable browser caching of static resources like CSS, JavaScript, and images. This allows browsers to store the resources locally, reducing the need to download them on subsequent visits.
+3. **Leverage browser caching:** Set appropriate caching headers to enable browser caching of static resources like CSS, JavaScript, and images. This allows browsers to store the resources locally, reducing the need to download them on subsequent visits.
 
-4. Use a content delivery network (CDN): Utilize a CDN to distribute website assets across multiple servers located in different geographic regions. This helps deliver content to users from a server that is physically closer to them, reducing latency and improving load times.
+4. **Use a content delivery network (CDN):** Utilize a CDN to distribute website assets across multiple servers located in different geographic regions. This helps deliver content to users from a server that is physically closer to them, reducing latency and improving load times.
 
-5. Optimize and combine CSS and JavaScript files: Minimize the number of CSS and JavaScript files by combining them into fewer files. This reduces the number of HTTP requests required to fetch assets, improving load times. However, ensure that the combined files are still manageable and modular for ease of development and maintenance.
+5. **Optimize and combine CSS and JavaScript files:** Minimize the number of CSS and JavaScript files by combining them into fewer files. This reduces the number of HTTP requests required to fetch assets, improving load times. However, ensure that the combined files are still manageable and modular for ease of development and maintenance.
 
-6. Lazy loading: Implement lazy loading for images and other non-critical resources, especially those below the fold. This defers loading of images until they come into the viewport, reducing initial page load times.
+6. **Lazy loading:** Implement lazy loading for images and other non-critical resources, especially those below the fold. This defers loading of images until they come into the viewport, reducing initial page load times.
 
-7. Implement responsive images: Use responsive images that are appropriately sized for different devices and screen resolutions. This ensures that users don't download larger images than necessary, resulting in faster load times.
+7. **Implement responsive images:** Use responsive images that are appropriately sized for different devices and screen resolutions. This ensures that users don't download larger images than necessary, resulting in faster load times.
 
-8. Optimize font usage: Use web-safe fonts or consider using icon fonts or SVG icons instead of image-based icons. Minimize the number of font files and their file sizes to reduce the impact on page load times.
+8. **Optimize font usage:** Use web-safe fonts or consider using icon fonts or SVG icons instead of image-based icons. Minimize the number of font files and their file sizes to reduce the impact on page load times.
 
-9. Asynchronous loading of scripts: Load JavaScript files asynchronously or defer their execution until after the critical content has finished loading. This prevents JavaScript from blocking the rendering of the page, resulting in a faster perceived load time.
+9. **Asynchronous loading of scripts:** Load JavaScript files asynchronously or defer their execution until after the critical content has finished loading. This prevents JavaScript from blocking the rendering of the page, resulting in a faster perceived load time.
 
-10. Optimize third-party scripts and plugins: Evaluate the necessity and impact of third-party scripts or plugins used on the website. Minimize their use or find alternatives that have better performance characteristics. Load them asynchronously if possible.
+10. **Optimize third-party scripts and plugins:** Evaluate the necessity and impact of third-party scripts or plugins used on the website. Minimize their use or find alternatives that have better performance characteristics. Load them asynchronously if possible.
 
-11. Monitor and analyze performance: Use performance monitoring tools like Google PageSpeed Insights or Lighthouse to identify performance bottlenecks and areas for improvement. Regularly analyze website performance and make adjustments based on the findings.
+11. **Monitor and analyze performance:** Use performance monitoring tools like Google PageSpeed Insights or Lighthouse to identify performance bottlenecks and areas for improvement. Regularly analyze website performance and make adjustments based on the findings.
 
 It's important to note that optimizing website assets is an iterative process. Continuous monitoring, testing, and refinements are necessary to ensure optimal performance. Additionally, the specific optimization techniques may vary based on the website's characteristics, technologies used, and target audience.
 ___
