@@ -171,9 +171,9 @@ Progressive enhancement is an approach where the core functionality and content 
 
 Key points of progressive enhancement include:
 
-1. Building a solid, accessible foundation: The core functionality is developed using standard HTML, CSS, and JavaScript that work across all browsers and devices, including older or less capable ones.
-2. Enhancing user experience for modern browsers: Additional features, styles, and interactions are added using more advanced technologies or techniques supported by modern browsers. This ensures that users with modern browsers can experience an enhanced version of the website or application.
-3. Graceful degradation for older or less capable browsers: If an advanced feature is not supported by a browser, the website or application gracefully degrades, providing a fallback experience that still allows users to access and interact with the core functionality.
+1. **Building a solid, accessible foundation:** The core functionality is developed using standard HTML, CSS, and JavaScript that work across all browsers and devices, including older or less capable ones.
+2. **Enhancing user experience for modern browsers:** Additional features, styles, and interactions are added using more advanced technologies or techniques supported by modern browsers. This ensures that users with modern browsers can experience an enhanced version of the website or application.
+3. **Graceful degradation for older or less capable browsers:** If an advanced feature is not supported by a browser, the website or application gracefully degrades, providing a fallback experience that still allows users to access and interact with the core functionality.
 
 Progressive enhancement prioritizes accessibility, inclusivity, and the broadest possible reach. It ensures that the website or application functions in a usable manner across a wide range of devices and browsers, regardless of their capabilities.
 
@@ -182,9 +182,9 @@ Graceful degradation is an approach where a website or application is initially 
 
 Key points of graceful degradation include:
 
-1. Developing with modern capabilities in mind: The website or application is initially built using advanced web technologies and features that are supported by modern browsers and devices, providing an enhanced user experience.
-2. Ensuring basic functionality in older or less capable browsers: Additional code and fallback mechanisms are implemented to ensure that the core functionality of the website or application remains accessible and usable in older or less capable browsers. This may involve providing alternative layouts, simplified interactions, or fallback scripts.
-3. Providing a degraded experience: If a feature or functionality is not supported in a browser, the website or application gracefully degrades, providing a simplified or less feature-rich experience that still allows users to access and interact with the essential functionality.
+1. **Developing with modern capabilities in mind:** The website or application is initially built using advanced web technologies and features that are supported by modern browsers and devices, providing an enhanced user experience.
+2. **Ensuring basic functionality in older or less capable browsers:** Additional code and fallback mechanisms are implemented to ensure that the core functionality of the website or application remains accessible and usable in older or less capable browsers. This may involve providing alternative layouts, simplified interactions, or fallback scripts.
+3. **Providing a degraded experience:** If a feature or functionality is not supported in a browser, the website or application gracefully degrades, providing a simplified or less feature-rich experience that still allows users to access and interact with the essential functionality.
 
 Graceful degradation prioritizes the development of cutting-edge user experiences for modern browsers while providing a fallback experience for older or less capable browsers. It focuses on taking advantage of the latest web technologies while still accommodating a wide range of users.
 
