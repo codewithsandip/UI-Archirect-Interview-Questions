@@ -233,22 +233,28 @@ It's worth mentioning that some techniques, like HTTP/2 or HTTP/3 (QUIC), can mu
 To understand the exact number of resources a browser is downloading from a given domain at a time, you can use browser developer tools or network monitoring tools to analyze the network requests and their timings.
 ___
 
-#### 10. Explain the importance of standards and standards bodies.
-Standards and standards bodies play a crucial role in various industries and domains by providing guidelines, specifications, and protocols that ensure interoperability, compatibility, and consistency. Here are some key reasons why standards and standards bodies are important:
+#### 10. How do you make decision about state management - comparing context api and redux?
+When deciding between using the Context API and Redux for state management in your JavaScript application, there are several factors to consider. Here are some points to help you make a decision:
 
-1. Interoperability: Standards define common protocols, formats, and interfaces that enable different systems, products, or services to work together seamlessly. They ensure that different components from various vendors can communicate and interoperate effectively, promoting compatibility and reducing integration challenges. Interoperability simplifies the development, deployment, and maintenance of complex systems, fostering innovation and promoting a competitive marketplace.
+1. **Complexity and Scalability:** Redux is generally more suitable for large-scale applications with complex state management needs. It provides a centralized store, middleware support, and a predictable state management pattern. If your application has a significant amount of shared state or requires advanced state manipulation, Redux might be a better fit.
 
-2. Consistency and Quality: Standards establish a set of best practices, guidelines, and requirements for quality and performance. They define benchmarks and criteria against which products, processes, or services can be evaluated. Adhering to standards helps ensure consistent and reliable outcomes, enabling users to have confidence in the quality and reliability of products or services. Standards also promote accountability and transparency, as they provide a reference point for assessing compliance.
+   On the other hand, the Context API, which is part of React, offers a simpler and more lightweight solution for managing state within the component tree. It is well-suited for smaller applications or cases where the state management requirements are relatively straightforward and do not involve deeply nested or highly interconnected state.
 
-3. Safety and Security: Standards often incorporate safety and security considerations, particularly in industries such as healthcare, aviation, and information security. They establish protocols, procedures, and guidelines to mitigate risks, protect users, and safeguard sensitive information. Compliance with relevant standards helps ensure that products or services meet essential safety and security requirements, minimizing potential harm and vulnerabilities.
+2. **Developer Familiarity and Learning Curve:** Redux has a steeper learning curve compared to the Context API. It introduces concepts like reducers, actions, and middleware, which require additional setup and understanding. If you and your team are already experienced with Redux or have complex state management needs, it might be beneficial to stick with Redux.
 
-4. Innovation and Market Growth: Standards foster innovation by providing a common framework for collaboration and knowledge sharing. They facilitate the development of compatible components, interoperable systems, and cross-platform solutions. By reducing barriers to entry and promoting fair competition, standards enable new players to enter the market, encourage innovation, and drive technological advancements.
+   Conversely, the Context API is part of React itself, making it more accessible and easier to grasp for developers already familiar with React. It provides a straightforward way to share state across components without the need for external libraries or additional setup.
 
-5. International Cooperation and Trade: Standards bodies, such as ISO (International Organization for Standardization) or IEC (International Electrotechnical Commission), establish globally recognized standards that facilitate international cooperation and trade. Harmonized standards simplify cross-border collaborations, product certifications, and regulatory compliance. They promote fair trade, remove technical barriers, and enhance market access by providing a level playing field for businesses worldwide.
+3. **Ecosystem and Tooling:** Redux has a mature ecosystem and a wide range of third-party packages and tooling available. It has established best practices, devtools for debugging, and integrations with popular libraries like React Router. If you require extensive tooling, middleware support, or advanced debugging capabilities, Redux offers a more comprehensive ecosystem.
 
-6. Future-proofing and Long-term Compatibility: Standards bodies continuously evolve and update standards to address emerging technologies, trends, and challenges. They anticipate future needs, adapt to changing requirements, and ensure long-term compatibility. Following established standards allows organizations to future-proof their products, processes, and systems, avoiding obsolescence and costly rework.
+   While the Context API has a smaller ecosystem, it has been gaining popularity, and there are community-driven packages available to enhance its functionality. However, if you have specific requirements that align with existing Redux ecosystem offerings, using Redux may provide a more convenient and well-supported solution.
 
-In summary, standards and standards bodies promote interoperability, consistency, quality, safety, security, innovation, and global cooperation. They provide a foundation for collaboration, fair competition, and market growth while ensuring that products and services meet essential requirements. Adhering to standards is vital for organizations to deliver reliable, compatible, and competitive solutions in a rapidly evolving technological landscape.
+4. **Performance Considerations:** The Context API in React has made significant performance improvements in recent versions, but Redux still offers more fine-grained control over performance optimizations. Redux enables you to implement features like memoization, selective updates, and middleware optimizations for better performance in certain scenarios. If performance is a critical concern, Redux may provide more optimization opportunities.
+
+5. **Team Collaboration and Codebase Consistency:** Consider the size and dynamics of your development team. If you have a large team or expect frequent changes in team composition, Redux's structured architecture, clear separation of concerns, and well-defined patterns can help maintain codebase consistency and facilitate collaboration. The standardized approach provided by Redux makes it easier for developers to understand and work on the codebase.
+
+   On the other hand, if you have a small team or prefer a more lightweight and flexible approach, the simplicity of the Context API can be beneficial. The Context API promotes a more localized and component-centric state management approach, which can be easier to reason about and maintain for smaller teams.
+
+Ultimately, the decision between the Context API and Redux depends on the specific requirements, complexity, scalability, familiarity, and performance considerations of your project. It's important to assess your project's needs and carefully evaluate the trade-offs before making a choice. Additionally, keep in mind that you can also combine the Context API and Redux in a hybrid approach, using Redux for global state management while leveraging the Context API for local component state or specific use cases within your application.
 ___
 
 #### 11. What is Flash of Unstyled Content? How do you avoid FOUC?
@@ -570,24 +576,45 @@ To ensure a seamless and intuitive user experience in my UI designs, I employ se
 By employing these strategies, I strive to create UI designs that are intuitive, user-friendly, and provide a seamless experience for users, ultimately enhancing their satisfaction and achieving the goals of the application or system.
 ___
 
-#### 24. How do you prioritize and balance user interface aesthetics with usability and functionality?
-When balancing user interface aesthetics with usability and functionality, it's important to prioritize the user's needs and goals while maintaining a visually appealing design. Here are some approaches I follow to strike a balance:
+#### 24. - How do you sharing data between microfrontends?
+First, you should avoid having shared states between MicroFrontend (MFE) much as possible. This is a best practice to avoid coupling, reduce bugs, etc..
+A lot of times you don't need it, for example, every information/state that came from the server (eg: the "user" information) could be requested individually for each MFE when they need it.
+However, in case you really need a shared state there are a few solutions like:
 
-1. User-Centered Design: I start by understanding the target users, their preferences, and their expectations. By conducting user research, creating user personas, and involving users in the design process, I ensure that the design decisions align with their needs and goals. This user-centric approach helps me prioritize usability and functionality over aesthetics.
+**Approach #1**: Implement the pub/sub pattern in the Window object:
+```js
+//MFE 1 
+import { Observable } from 'windowed-observable';
 
-2. Clear and Intuitive Layout: I prioritize usability by creating clear and intuitive layouts. This involves organizing content logically, using consistent visual hierarchy, and ensuring that important elements are easily discoverable. By providing a clean and well-structured interface, users can navigate and interact with the system efficiently.
+const observable = new Observable('messages');
+observable.publish(input.value); //input.value markup is not present in this example for simplicity
 
-3. Visual Design Guidelines: I establish visual design guidelines that define the overall aesthetic direction, including colors, typography, and visual elements. These guidelines help maintain consistency across the interface and ensure that the visual design supports usability. The use of appropriate color contrast, legible typography, and visually pleasing elements contributes to both aesthetics and functionality.
 
-4. Minimalism and Simplicity: I believe in the power of simplicity in UI design. By removing unnecessary clutter and focusing on essential elements, I create a clean and uncluttered interface that enhances usability. This minimalist approach not only improves functionality but also contributes to a visually appealing design.
+//MFE 2 
+import { Observable } from 'windowed-observable';
 
-5. Visual Feedback and Affordances: I incorporate visual feedback and affordances to guide users and provide clarity in the interface. Visual cues, such as hover effects, button states, and animations, help users understand the interactive elements and their functionality. These design elements contribute to both usability and aesthetics, enhancing the overall user experience.
+const observable = new Observable('messages');
 
-6. Iterative Design and User Testing: I iterate on the design based on user feedback and usability testing. By involving users early in the design process, I gather insights into their preferences, pain points, and usability issues. This iterative approach helps me refine the design, balancing aesthetics with usability and functionality based on real user input.
+const handleNewMessage = (newMessage) => {
+    setMessages((currentMessages) =>  currentMessages.concat(newMessage)); //custom logic to handle the message
+  };
 
-7. Collaboration with Designers and Developers: I collaborate closely with designers and developers to ensure that aesthetics, usability, and functionality are considered together. By involving all stakeholders in the design process, we can collectively prioritize and balance these aspects. Regular communication and feedback loops help ensure that the design decisions align with both visual appeal and usability goals.
+ observable.subscribe(handleNewMessage);
+```
 
-By prioritizing user needs and involving stakeholders in the design process, I can strike a balance between user interface aesthetics, usability, and functionality. The goal is to create a visually pleasing interface that not only looks good but also supports users in achieving their goals effectively and efficiently.
+**Approach #2**: Dispatch/Capture Custom browser Events Remember that Custom Events can have 'details' that allow pass information:
+```js
+//MF1 
+const customEvent = new CustomEvent('message', { detail: input.value });
+window.dispatchEvent(customEvent)
+
+//MF2 
+const handleNewMessage = (event) => {
+setMessages((currentMessages) => currentMessages.concat(event.detail));
+};
+    
+window.addEventListener('message', handleNewMessage);
+```
 ___
 
 #### 25. What is your experience with UI design patterns?
@@ -830,6 +857,23 @@ To address internationalization and localization requirements effectively, it's 
 Utilizing localization frameworks or libraries can also simplify the process by providing tools for managing translations, handling dynamic content, and supporting locale-specific formatting. Additionally, maintaining a localization glossary or style guide can help ensure consistency and accuracy across translations.
 
 By incorporating internationalization and localization considerations into UI designs, applications can provide a more inclusive and user-friendly experience for users around the world.
+
+#### 35. How do you store lots of data on client side (caching) other than local storage or session storage?
+If you need to store a large amount of data on the client-side for caching purposes, there are alternative options available beyond local storage or session storage. Here are a few additional approaches:
+
+1. **IndexedDB:** IndexedDB is a powerful browser-based database that allows you to store structured data on the client-side. It provides a more advanced and flexible storage solution compared to local storage or session storage. IndexedDB supports indexes, transactions, and querying capabilities, making it suitable for storing and retrieving large amounts of structured data.
+
+2. **Web SQL Database (deprecated):** Web SQL Database is a deprecated but still supported client-side database technology that provides a SQL-based interface for storing data. It allows you to create tables, execute SQL queries, and manage data efficiently. However, note that Web SQL Database is no longer actively developed or recommended by the W3C, and its usage is discouraged in favor of IndexedDB.
+
+3. **File System API:** The File System API allows web applications to read and write files on the client-side. It provides a sandboxed file system environment that can be used for storing and caching data. This approach is suitable when you need to store large files or binary data that cannot be easily represented in other storage options.
+
+4. **Service Workers:** Service workers are JavaScript files that run in the background, separate from the main browser thread. They can intercept and handle network requests, enabling you to cache responses and store data offline. Service workers can use the Cache API or IndexedDB to store and retrieve cached data. This approach is particularly useful for implementing advanced caching and offline capabilities in web applications.
+
+5. **In-memory Data Structures:** If your caching needs are temporary and don't require persistence, you can use in-memory data structures like JavaScript arrays or objects. These structures can hold large amounts of data in memory during the application's runtime. However, be cautious with this approach, as storing too much data in memory can impact performance and memory usage.
+
+It's important to note that each of these storage options has its own characteristics, capabilities, and trade-offs. Consider factors such as storage capacity, performance, data structure requirements, querying capabilities, and compatibility with target browsers when choosing the most suitable approach for your specific use case.
+
+Additionally, depending on your requirements, you may also consider combining multiple storage options or utilizing caching strategies provided by frameworks or libraries to optimize data storage and retrieval on the client-side.
 ___
 
 
@@ -1143,6 +1187,7 @@ Layout, painting, and compositing are distinct stages in the rendering process o
 It's important to note that these stages are not always performed sequentially in a strict order. Modern browsers employ various optimization techniques, such as incremental rendering and layer-based rendering, to improve performance and responsiveness. These techniques can result in overlapping or concurrent execution of layout, painting, and compositing processes.
 
 Understanding the distinction between layout, painting, and compositing is essential for optimizing website performance. By minimizing layout recalculations, reducing unnecessary painting operations, and leveraging hardware acceleration for compositing, developers can enhance rendering efficiency and achieve smoother user experiences.
+___
 
 #### 4. How do you unblock javascript by delegating time consuming processes in the background?
 To unblock JavaScript and delegate time-consuming processes to the background, you can use techniques like Web Workers and asynchronous operations. Here's a high-level overview of these approaches:
